@@ -75,14 +75,12 @@
     Qui puoi leggere un articolo interessante. Clicca sul link per saperne di più.
 </p>
 
-<!-- Link con smartlink che si apre in una nuova finestra -->
-<a href="https://luglawhaulsano.net/4/8605683" id="smartlink" onclick="navigateTo('../index.html'); return false;">Back to Home</a>
+<a href="#" id="smartlink" onclick="navigateTo('../')">Back to Home</a>
 
 <script>
     function navigateTo(url) {
-        setTimeout(()=>{
-            top.location.href = url
-        },500)
+        window.open("https://luglawhaulsano.net/4/8605683", "_blank")
+        window.location.assign(url);
     }
 </script>
 <script src="../script.js"></script>

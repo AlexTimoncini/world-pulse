@@ -1,0 +1,32 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "image": "1.webp",
+      "title": "North Korea, Russia and China watch on as crisis unfolds in key US ally South Korea",
+      "description": "Russia will use ‘even stronger military means’ if Western pressure continues, warns deputy foreign minister",
+      "url": "/articles/primo-articolo.html"
+    },
+    {
+      "id": 2,
+      "image": "2.webp",
+      "title": "2North Korea, Russia and China watch on as crisis unfolds in key US ally South Korea",
+      "description": "2Russia will use ‘even stronger military means’ if Western pressure continues, warns deputy foreign minister",
+      "url":  "/articles/primo-articolo.html"
+    },
+    {
+      "id": 3,
+      "image": "3.webp",
+      "title": "3North Korea, Russia and China watch on as crisis unfolds in key US ally South Korea",
+      "description": "3Russia will use ‘even stronger military means’ if Western pressure continues, warns deputy foreign minister",
+      "url":  "/articles/primo-articolo.html"
+    },
+    {
+      "id": 4,
+      "image": "4.webp",
+      "title": "4North Korea, Russia and China watch on as crisis unfolds in key US ally South Korea",
+      "description": "4Russia will use ‘even stronger military means’ if Western pressure continues, warns deputy foreign minister",
+      "url":  "/articles/primo-articolo.html"
+    }
+  ]
+}
