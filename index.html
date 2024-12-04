@@ -87,7 +87,7 @@
         articles.forEach((a,i) => {
             if(i === 0) {
                 let hero = document.querySelector(".hero")
-                hero.style.backgroundImage = "url('/images/"+a.img+"')"
+                hero.style.backgroundImage = "url('/images/"+a.image+"')"
                 let initialHero = hero.innerHTML
                 initialHero = initialHero.replace("{{title_1}}", a.title)
                 initialHero = initialHero.replace("{{descr_1}}", a.description)
@@ -98,9 +98,9 @@
             } else {
                 let article = document.getElementById("article_"+i)
                 let artHTML = article.innerHTML
-                artHTML = artHTML.replace("{{title_"+(i+1)+"}}", a.title)
+                artHTML = artHTML.replaceAll("{{title_"+(i+1)+"}}", a.title)
                 artHTML = artHTML.replace("{{descr_"+(i+1)+"}}", a.description)
-                artHTML = artHTML.replace("{{image_"+(i+1)+"}}", a.image)
+                artHTML = artHTML.replace("{{image_"+(i+1)+"}}", "/images/"+a.image)
                 article.innerHTML = artHTML
                 document.getElementById("link"+i).addEventListener("click", ()=>{
                     navigateTo(a.url)
