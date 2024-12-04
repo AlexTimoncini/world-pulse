@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="./manifest.json"/>
+    <link rel="apple-touch-icon" sizes="32x32" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="58x58" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="80x80" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="87x87" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="./logos/logo.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logos/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./logos/logo.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Home - WorldPulse</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="javascript:void(0)" onclick="navigateTo('/')">WorldPulse</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="navigateTo('/')">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="navigateTo('/articles.html')">News</a></li>
+                <li><a href="javascript:void(0)" onclick="navigateTo('/trends.html')">Trends</a></li>
+                <li><a href="javascript:void(0)" onclick="navigateTo('/about-us.html')">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="article-list">
+            <h2>Ultimi Articoli</h2>
+            <div class="grid">
+                <article>
+                    <a href="articolo1.html">
+                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 1">
+                        <h3>Titolo Articolo 1</h3>
+                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="articolo2.html">
+                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 2">
+                        <h3>Titolo Articolo 2</h3>
+                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="articolo3.html">
+                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 3">
+                        <h3>Titolo Articolo 3</h3>
+                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
+                    </a>
+                </article>
+                <article>
+                    <a href="articolo4.html">
+                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 4">
+                        <h3>Titolo Articolo 4</h3>
+                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 WorldPulse.it - All rights reserved.</p>
+    </footer>
+<script src="./script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", async function(){
+        let articles = await getArticles()
+        articles.forEach((a,i) => {
+            if(i === 0) {
+                let hero = document.querySelector(".hero")
+                hero.style.backgroundImage = "url('/images/"+a.image+"')"
+                let initialHero = hero.innerHTML
+                initialHero = initialHero.replace("{{title_1}}", a.title)
+                initialHero = initialHero.replace("{{descr_1}}", a.description)
+                hero.innerHTML = initialHero
+                document.getElementById("hero_link").addEventListener("click", ()=>{
+                    navigateTo(a.url)
+                })
+            } else {
+                let article = document.getElementById("article_"+i)
+                let artHTML = article.innerHTML
+                artHTML = artHTML.replaceAll("{{title_"+(i+1)+"}}", a.title)
+                artHTML = artHTML.replace("{{descr_"+(i+1)+"}}", a.description)
+                artHTML = artHTML.replace("{{image_"+(i+1)+"}}", "/images/"+a.image)
+                article.innerHTML = artHTML
+                document.getElementById("link"+i).addEventListener("click", ()=>{
+                    navigateTo(a.url)
+                })
+            }
+        })
+        async function getArticles() {
+            try {
+                const response = await fetch('./articles/articles.json');
+                if (!response.ok) {
+                    throw new Error('Failed to load level manifest');
+                }
+                const manifest = await response.json()
+                return manifest.articles.sort((a,b)=>b.id - a.id)
+            } catch (error) {
+                return false
+            }
+        }
+    })
+</script>
+</body>
+</html>

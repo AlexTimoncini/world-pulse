@@ -101,6 +101,8 @@ header nav ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
     min-width: 300px;
+    width: 30%;
+    max-width: 500px;
     flex-grow: 1;
     margin: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -142,6 +144,23 @@ header nav ul li a:hover {
 .article a:hover {
     background-color: #2980b9;
 }
+
+.article-list {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.article-list h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.article-list .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
 
 /* Footer */
 footer {
