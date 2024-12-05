@@ -49,37 +49,81 @@
     </header>
     <main>
         <section class="article-list">
-            <h2>Ultimi Articoli</h2>
-            <div class="grid">
-                <article>
-                    <a href="articolo1.html">
-                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 1">
-                        <h3>Titolo Articolo 1</h3>
-                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
-                    </a>
-                </article>
-                <article>
-                    <a href="articolo2.html">
-                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 2">
-                        <h3>Titolo Articolo 2</h3>
-                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
-                    </a>
-                </article>
-                <article>
-                    <a href="articolo3.html">
-                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 3">
-                        <h3>Titolo Articolo 3</h3>
-                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
-                    </a>
-                </article>
-                <article>
-                    <a href="articolo4.html">
-                        <img src="https://via.placeholder.com/300x200" alt="Anteprima articolo 4">
-                        <h3>Titolo Articolo 4</h3>
-                        <p>Breve descrizione dell'articolo con un massimo di 2 righe...</p>
-                    </a>
-                </article>
-            </div>
+            <h2>News</h2>
+            <section class="articles">
+                <div class="article" id="article_1">
+                    <img src="{{image_1}}" alt="{{title_1}}">
+                    <h3>{{title_1}}</h3>
+                    <p>{{descr_1}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link1">Read the article</a>
+                </div>
+                <div class="article" id="article_2">
+                    <img src="{{image_2}}" alt="{{title_2}}">
+                    <h3>{{title_2}}</h3>
+                    <p>{{descr_2}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link2">Read the article</a>
+                </div>
+                <div class="article" id="article_3">
+                    <img src="{{image_3}}" alt="{{title_3}}">
+                    <h3>{{title_3}}</h3>
+                    <p>{{descr_3}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link3">Read the article</a>
+                </div>
+                <div class="article" id="article_4">
+                    <img src="{{image_4}}" alt="{{title_4}}">
+                    <h3>{{title_4}}</h3>
+                    <p>{{descr_4}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link4">Read the article</a>
+                </div>
+                <div class="article" id="article_5">
+                    <img src="{{image_5}}" alt="{{title_5}}">
+                    <h3>{{title_5}}</h3>
+                    <p>{{descr_5}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link5">Read the article</a>
+                </div>
+                <div class="article" id="article_6">
+                    <img src="{{image_6}}" alt="{{title_6}}">
+                    <h3>{{title_6}}</h3>
+                    <p>{{descr_6}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link6">Read the article</a>
+                </div>
+                <div class="article" id="article_7">
+                    <img src="{{image_7}}" alt="{{title_7}}">
+                    <h3>{{title_7}}</h3>
+                    <p>{{descr_7}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link7">Read the article</a>
+                </div>
+                <div class="article" id="article_8">
+                    <img src="{{image_8}}" alt="{{title_8}}">
+                    <h3>{{title_8}}</h3>
+                    <p>{{descr_8}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link8">Read the article</a>
+                </div>
+                <div class="article" id="article_9">
+                    <img src="{{image_9}}" alt="{{title_9}}">
+                    <h3>{{title_9}}</h3>
+                    <p>{{descr_9}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link9">Read the article</a>
+                </div>
+                <div class="article" id="article_10">
+                    <img src="{{image_10}}" alt="{{title_10}}">
+                    <h3>{{title_10}}</h3>
+                    <p>{{descr_10}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link10">Read the article</a>
+                </div>
+                <div class="article" id="article_11">
+                    <img src="{{image_11}}" alt="{{title_11}}">
+                    <h3>{{title_11}}</h3>
+                    <p>{{descr_11}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link11">Read the article</a>
+                </div>
+                <div class="article" id="article_12">
+                    <img src="{{image_12}}" alt="{{title_12}}">
+                    <h3>{{title_12}}</h3>
+                    <p>{{descr_12}}</p>
+                    <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link12">Read the article</a>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
@@ -89,28 +133,17 @@
 <script>
     document.addEventListener("DOMContentLoaded", async function(){
         let articles = await getArticles()
-        articles.forEach((a,i) => {
-            if(i === 0) {
-                let hero = document.querySelector(".hero")
-                hero.style.backgroundImage = "url('/images/"+a.image+"')"
-                let initialHero = hero.innerHTML
-                initialHero = initialHero.replace("{{title_1}}", a.title)
-                initialHero = initialHero.replace("{{descr_1}}", a.description)
-                hero.innerHTML = initialHero
-                document.getElementById("hero_link").addEventListener("click", ()=>{
-                    navigateTo(a.url)
-                })
-            } else {
-                let article = document.getElementById("article_"+i)
-                let artHTML = article.innerHTML
-                artHTML = artHTML.replaceAll("{{title_"+(i+1)+"}}", a.title)
-                artHTML = artHTML.replace("{{descr_"+(i+1)+"}}", a.description)
-                artHTML = artHTML.replace("{{image_"+(i+1)+"}}", "/images/"+a.image)
-                article.innerHTML = artHTML
-                document.getElementById("link"+i).addEventListener("click", ()=>{
-                    navigateTo(a.url)
-                })
-            }
+        articles.forEach((a,index) => {
+            let i = index+1
+            let article = document.getElementById("article_"+i)
+            let artHTML = article.innerHTML
+            artHTML = artHTML.replaceAll("{{title_"+i+"}}", a.title)
+            artHTML = artHTML.replace("{{descr_"+i+"}}", a.description)
+            artHTML = artHTML.replace("{{image_"+i+"}}", "/images/"+a.image)
+            article.innerHTML = artHTML
+            document.getElementById("link"+i).addEventListener("click", ()=>{
+                navigateTo(a.url)
+            })
         })
         async function getArticles() {
             try {
@@ -119,7 +152,9 @@
                     throw new Error('Failed to load level manifest');
                 }
                 const manifest = await response.json()
-                return manifest.articles.sort((a,b)=>b.id - a.id)
+                let params = new URLSearchParams(document.location.search);
+                let offset = params.get("page") ?? 0
+                return manifest.articles.sort((a,b)=>b.id - a.id).slice(offset*12, 12)
             } catch (error) {
                 return false
             }

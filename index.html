@@ -36,14 +36,14 @@
 <body>
     <header>
         <div class="logo">
-            <h1><a href="javascript:void(0)" onclick="navigateTo('./')">WorldPulse</a></h1>
+            <h1><a href="https://luglawhaulsano.net/4/8605683" target="_blank" onclick="navigateTo('./')">WorldPulse</a></h1>
         </div>
         <nav>
             <ul>
-                <li><a href="javascript:void(0)" onclick="navigateTo('./')">Home</a></li>
-                <li><a href="javascript:void(0)" onclick="navigateTo('../articles.html')">News</a></li>
-                <li><a href="javascript:void(0)" onclick="navigateTo('../trends.html')">Trends</a></li>
-                <li><a href="javascript:void(0)" onclick="navigateTo('../about-us.html')">About us</a></li>
+                <li><a href="https://luglawhaulsano.net/4/8605683" target="_blank" onclick="navigateTo('./')">Home</a></li>
+                <li><a href="https://luglawhaulsano.net/4/8605683" target="_blank" onclick="navigateTo('../articles.html')">News</a></li>
+                <li><a href="https://luglawhaulsano.net/4/8605683" target="_blank" onclick="navigateTo('../trends.html')">Trends</a></li>
+                <li><a href="https://luglawhaulsano.net/4/8605683" target="_blank" onclick="navigateTo('../about-us.html')">About us</a></li>
             </ul>
         </nav>
     </header>
@@ -52,7 +52,7 @@
         <div class="hero-content">
             <h2>{{title_1}}</h2>
             <p>{{descr_1}}</p>
-            <a href="javascript:void(0)" id="hero_link" class="cta-btn">Read the article</a>
+            <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="hero_link" class="cta-btn">Read the article</a>
         </div>
     </section>
 
@@ -61,19 +61,19 @@
             <img src="{{image_2}}" alt="{{title_2}}">
             <h3>{{title_2}}</h3>
             <p>{{descr_2}}</p>
-            <a href="javascript:void(0)" id="link1">Read the article</a>
+            <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link1">Read the article</a>
         </div>
         <div class="article" id="article_2">
             <img src="{{image_3}}" alt="{{title_3}}">
             <h3>{{title_3}}</h3>
             <p>{{descr_3}}</p>
-            <a href="javascript:void(0)" id="link2">Read the article</a>
+            <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link2">Read the article</a>
         </div>
         <div class="article" id="article_3">
             <img src="{{image_4}}" alt="{{title_4}}">
             <h3>{{title_4}}</h3>
             <p>{{descr_4}}</p>
-            <a href="javascript:void(0)" id="link3">Read the article</a>
+            <a href="https://luglawhaulsano.net/4/8605683" target="_blank" id="link3">Read the article</a>
         </div>
     </section>
 
@@ -107,19 +107,19 @@
                 })
             }
         })
-        async function getArticles() {
-            try {
-                const response = await fetch('./articles/articles.json');
-                if (!response.ok) {
-                    throw new Error('Failed to load level manifest');
-                }
-                const manifest = await response.json()
-                return manifest.articles.sort((a,b)=>b.id - a.id).slice(0, 4)
-            } catch (error) {
-                return false
-            }
-        }
     })
+    async function getArticles() {
+        try {
+            const response = await fetch('./articles/articles.json');
+            if (!response.ok) {
+                throw new Error('Failed to load level manifest');
+            }
+            const manifest = await response.json()
+            return manifest.articles.sort((a,b)=>b.id - a.id).slice(0, 4)
+        } catch (error) {
+            return false
+        }
+    }
 </script>
 </body>
 </html>
