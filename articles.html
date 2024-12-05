@@ -142,7 +142,7 @@
             artHTML = artHTML.replace("{{image_"+i+"}}", "/images/"+a.image)
             article.innerHTML = artHTML
             document.getElementById("link"+i).addEventListener("click", ()=>{
-                navigateTo(a.url)
+                navigateTo("/articles/"+a.url)
             })
         })
         async function getArticles() {
