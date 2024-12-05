@@ -1,3 +1,5 @@
 function navigateTo(url){
-    top.location.href = url
+    setTimeout(()=>{
+        top.location.href = url
+    })
 }
