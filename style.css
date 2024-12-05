@@ -251,7 +251,7 @@ footer p {
 
 .article-footer p {
     font-size: 1rem;
-    color: #555;
+    color: #fff;
 }
 
 .social-icons {
@@ -274,4 +274,10 @@ footer p {
 .social-icons a:hover {
     background: #46d5f1;
     color: #fff;
+}
+figure img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
 }
