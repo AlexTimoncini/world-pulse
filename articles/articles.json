@@ -6,70 +6,70 @@
         "title": "The Rise of Green Energy: What It Means for Our Future",
         "image": "green-energy.jpg",
         "description": "Explore how renewable energy sources are reshaping industries and reducing carbon footprints.",
-        "link": "article1.html"
+        "url": "article1.html"
       },
       {
         "id": 2,
         "title": "Top 10 Virtual Reality Innovations You Should Know About in 2024",
         "image": "2.webp",
         "description": "Highlighting the most exciting VR trends in gaming, education, and healthcare.",
-        "link": "virtual-reality-innovations.html"
+        "url": "virtual-reality-innovations.html"
       },
       {
         "id": 3,
         "title": "Self-Improvement Strategies to Start 2025 Strong",
         "image": "self-improvement.jpg",
         "description": "A practical guide to personal growth and breaking bad habits.",
-        "link": "article3.html"
+        "url": "article3.html"
       },
       {
         "id": 4,
         "title": "The Evolution of Headless CMS: A Developer's Perspective",
         "image": "headless-cms.jpg",
         "description": "A deep dive into why headless CMS is the future of web development.",
-        "link": "article4.html"
+        "url": "article4.html"
       },
       {
         "id": 5,
         "title": "10 Sustainable Fashion Brands to Watch in 2024",
         "image": "sustainable-fashion.jpg",
         "description": "Spotlight on eco-friendly brands making waves in the fashion industry.",
-        "link": "article5.html"
+        "url": "article5.html"
       },
       {
         "id": 6,
         "title": "What to Expect in Artificial Intelligence in 2025",
         "image": "ai-future.jpg",
         "description": "Expert predictions on AI trends and their potential impact.",
-        "link": "article6.html"
+        "url": "article6.html"
       },
       {
         "id": 7,
         "title": "Productivity Hacks to Supercharge Your Day",
         "image": "productivity-hacks.jpg",
         "description": "Tips and tools for managing time and boosting efficiency.",
-        "link": "article7.html"
+        "url": "article7.html"
       },
       {
         "id": 8,
         "title": "DIY Tips for Creating a Cozy Home this Winter",
         "image": "cozy-home.jpg",
         "description": "Easy, cost-effective ways to add warmth and style to your space.",
-        "link": "article8.html"
+        "url": "article8.html"
       },
       {
         "id": 9,
         "title": "Budget-Friendly Travel Destinations for 2024",
         "image": "travel-destinations.jpg",
         "description": "Hidden gems and tips for traveling without breaking the bank.",
-        "link": "article9.html"
+        "url": "article9.html"
       },
       {
         "id": 10,
         "title": "Exploring the Gig Economy: Opportunities and Challenges",
         "image": "gig-economy.jpg",
         "description": "A look at how freelancing is shaping the workforce of tomorrow.",
-        "link": "article10.html"
+        "url": "article10.html"
       }
     ]
 }
