@@ -94,7 +94,7 @@
                 initialHero = initialHero.replace("{{descr_1}}", a.description)
                 hero.innerHTML = initialHero
                 document.getElementById("hero_link").addEventListener("click", ()=>{
-                    navigateTo(a.url)
+                    navigateTo("/articles/"+a.url)
                 })
             } else {
                 let article = document.getElementById("article_"+i)
