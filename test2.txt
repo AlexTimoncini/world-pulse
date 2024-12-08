@@ -1,2 +1,0 @@
-Questo è un file creato con PHP.
-Hello, GitHub!
