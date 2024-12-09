@@ -25,16 +25,16 @@
       {
         "id": 4,
         "title": "The Evolution of Headless CMS: A Developer's Perspective",
-        "image": "headless-cms.jpg",
+        "image": "4.webp",
         "description": "A deep dive into why headless CMS is the future of web development.",
-        "url": "article4.html"
+        "url": "cms-evolution.html"
       },
       {
         "id": 5,
         "title": "10 Sustainable Fashion Brands to Watch in 2024",
-        "image": "sustainable-fashion.jpg",
+        "image": "5.webp",
         "description": "Spotlight on eco-friendly brands making waves in the fashion industry.",
-        "url": "article5.html"
+        "url": "sustainable-fashion.html"
       },
       {
         "id": 6,
