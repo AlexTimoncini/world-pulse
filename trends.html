@@ -31,7 +31,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./logos/logo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./logos/logo.png">
     <link rel="stylesheet" href="/style.css">
-    <title>News - WorldPulse</title>
+    <title>Trends - WorldPulse</title>
 </head>
 <body>
     <header>
@@ -49,7 +49,9 @@
     </header>
     <main>
         <section class="article-list">
-            <h2>News</h2>
+            <h2>
+                Trends
+            </h2>
             <section class="articles"></section>
             <div id="paginator"></div>
         </section>
@@ -85,12 +87,12 @@
             console.log(activePage, articles, pages)
             if(pages > 1) {
                 if(activePage === pages){
-                    btns = `<a href="" onclick="navigateTo('/articles.html?page=${pages-1}')">Page ${pages-1}</a>`
+                    btns = `<a href="" onclick="navigateTo('/trends.html?page=${pages-1}')">Page ${pages-1}</a>`
                 } else if(activePage === 1){
-                    btns = `<a href="" onclick="navigateTo('/articles.html?page=2')">Page 2</a>`
+                    btns = `<a href="" onclick="navigateTo('/trends.html?page=2')">Page 2</a>`
                 } else {
-                    btns = `<a href="" onclick="navigateTo('/articles.html?page=${activePage-1}')">Page ${activePage-1}</a>
-                            <a href="" onclick="navigateTo('/articles.html?page=${activePage+1}')">Page ${activePage+1}</a>`
+                    btns = `<a href="" onclick="navigateTo('/trends.html?page=${activePage-1}')">Page ${activePage-1}</a>
+                            <a href="" onclick="navigateTo('/trends.html?page=${activePage+1}')">Page ${activePage+1}</a>`
                 }
             }
             paginator.innerHTML = btns

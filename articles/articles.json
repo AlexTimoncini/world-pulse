@@ -46,23 +46,23 @@
       {
         "id": 7,
         "title": "Productivity Hacks to Supercharge Your Day",
-        "image": "productivity-hacks.jpg",
-        "description": "Tips and tools for managing time and boosting efficiency.",
-        "url": "article7.html"
+        "image": "7.webp",
+        "description": "Practical productivity hacks to help you achieve more in less time and optimize your daily routine.",
+        "url": "supercharg-your-day.html"
       },
       {
         "id": 8,
         "title": "DIY Tips for Creating a Cozy Home this Winter",
-        "image": "cozy-home.jpg",
-        "description": "Easy, cost-effective ways to add warmth and style to your space.",
-        "url": "article8.html"
+        "image": "8.webp",
+        "description": "Cozy DIY tips to transform your home into a warm and inviting winter haven.",
+        "url": "cozy-home.html"
       },
       {
         "id": 9,
         "title": "Budget-Friendly Travel Destinations for 2024",
-        "image": "travel-destinations.jpg",
-        "description": "Hidden gems and tips for traveling without breaking the bank.",
-        "url": "article9.html"
+        "image": "9.webp",
+        "description": "Discover affordable and unforgettable travel destinations for 2024 that fit any budget.",
+        "url": "travel-destinations.html"
       },
       {
         "id": 10,
@@ -70,6 +70,20 @@
         "image": "10.jpeg",
         "description": "A look at how freelancing is shaping the workforce of tomorrow.",
         "url": "gig-economy.html"
+      },
+      {
+        "id": 11,
+        "title": "The Real Story Behind the Mysterious Disappearance of a Popular Influencer",
+        "image": "11.jpg",
+        "description": "The mysterious disappearance of influencer Emily Hart has sparked a wave of speculation and concern. Fans are desperate for answers as the investigation unfolds.",
+        "url": "influencer-disappearance.html"
+      },
+      {
+        "id": 12,
+        "title": "The Rise and Fall of a Billionaire: How Greed Led to Destruction",
+        "image": "12.jpg",
+        "description": "From humble beginnings to a multi-billion-dollar empire, this is the shocking tale of a billionaire whose insatiable greed led to a dramatic fall from grace. A story of power, betrayal, and ultimate downfall.",
+        "url": "millionaire-greed.html"
       }
     ]
 }
