@@ -98,6 +98,13 @@
         "image": "14.webp",
         "description": "In the past week, Gaza and Syria have witnessed some of the most harrowing scenes of destruction and human suffering. As the airstrikes and violence continue, the Palestinian people face unimaginable hardship, with innocent civilians paying the price for political conflict. This article highlights the latest events, the human cost of war, and the urgent need for international action to stop the bloodshed.",
         "url": "gaza-syria.html"
+      },
+      {
+        "id": 15,
+        "title": "The Hidden Tragedy: Children of Gaza Suffer Amidst the Violence",
+        "image": "15.webp",
+        "description": "Uncover the harsh realities faced by children in Gaza, revealing the devastating effects of war on their lives and the hidden truths behind their silent suffering amidst ongoing violence.",
+        "url": "gaza-children.html"
       }
     ]
 }
