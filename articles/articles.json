@@ -84,6 +84,13 @@
         "image": "12.jpg",
         "description": "From humble beginnings to a multi-billion-dollar empire, this is the shocking tale of a billionaire whose insatiable greed led to a dramatic fall from grace. A story of power, betrayal, and ultimate downfall.",
         "url": "millionaire-greed.html"
+      },
+      {
+        "id": 13,
+        "title": "The Shocking Secrets of a Young Influencer Exposed",
+        "image": "13.webp",
+        "description": "Uncover the shocking secrets of a young influencer and the hidden truths behind their social media success!",
+        "url": "shocking-secrets.html"
       }
     ]
 }
