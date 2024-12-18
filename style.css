@@ -30,7 +30,7 @@ header {
     border: 5px solid #2c3e50;
 }
 header.article-header{
-    background-color: #2c3e50;
+    background: #2c3e50;
 }
 header .logo,
 header nav{
