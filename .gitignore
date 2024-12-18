@@ -1,1 +1,6 @@
 /power.php
+/composer.json
+/composer.lock
+/credentials.json
+/test.php
+/vendor
