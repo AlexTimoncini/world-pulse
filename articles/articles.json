@@ -112,6 +112,13 @@
         "image": "16.webp",
         "description": "The incredible journey of a tech innovator who lost it all in a battle for power.",
         "url": "tech-mogul.html"
+      },
+      {
+        "id": 17,
+        "title": "The Fragile Balance of Political Alliances: A Global Crisis Unfolds",
+        "image": "17.webp",
+        "description": "A high-stakes chess game in global diplomacy, where one wrong move could spark chaos.",
+        "url": "political-alliances.html"
       }
     ]
 }
