@@ -105,6 +105,13 @@
         "image": "15.webp",
         "description": "Uncover the harsh realities faced by children in Gaza, revealing the devastating effects of war on their lives and the hidden truths behind their silent suffering amidst ongoing violence.",
         "url": "gaza-children.html"
+      },
+      {
+        "id": 16,
+        "title": "The Rise and Fall of a Tech Mogul: A Cautionary Tale",
+        "image": "16.webp",
+        "description": "The incredible journey of a tech innovator who lost it all in a battle for power.",
+        "url": "tech-mogul.html"
       }
     ]
 }
