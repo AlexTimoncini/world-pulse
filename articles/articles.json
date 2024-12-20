@@ -119,6 +119,20 @@
         "image": "17.webp",
         "description": "A high-stakes chess game in global diplomacy, where one wrong move could spark chaos.",
         "url": "political-alliances.html"
+      },
+      {
+        "id": 18,
+        "title": "Hollywood's Secret Scandal: The Betrayal That Shocked the World",
+        "image": "18.webp",
+        "description": "A secret revealed on Hollywood’s biggest night leaves everyone stunned, was that Ariana Grande?.",
+        "url": "hollywood-betrayal.html"
+      },
+      {
+        "id": 19,
+        "title": "Royal Rift: A Family Feud Goes Public",
+        "image": "19.webp",
+        "description": "Behind palace doors, a feud between two prominent royals spills into the public eye.",
+        "url": "royal-rift.html"
       }
     ]
 }
