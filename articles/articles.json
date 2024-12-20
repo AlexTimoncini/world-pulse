@@ -133,6 +133,13 @@
         "image": "19.webp",
         "description": "Behind palace doors, a feud between two prominent royals spills into the public eye.",
         "url": "royal-rift.html"
+      },
+      {
+        "id": 20,
+        "title": "Celebrity Love Triangle Shocks Fans",
+        "image": "20.webp",
+        "description": "A tangled web of romance and betrayal unfolds as three major celebrities become embroiled in a dramatic love triangle.",
+        "url": "celebrity-triangle.html"
       }
     ]
 }
